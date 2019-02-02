@@ -1,26 +1,25 @@
-/.classpath
-/.project
-/.settings
-/.idea
-/bin
-/target
-/*.iml
-*~
-/${project.build.dir}
-/nb-configuration.xml
-/nbactions.xml
-/target
-/nb-configuration.xml
-/src/main/webapp/META-INF/context.xml
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
 .project
 .settings
-.classpath
-bin
-*.*~
-*.log
-target
-/nbproject/
-db.data
-db.redo
-/nbactions-upload nexumcomms.xml
-/nbactions-run no tests.xml
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+/build/
