@@ -1,0 +1,26 @@
+/.classpath
+/.project
+/.settings
+/.idea
+/bin
+/target
+/*.iml
+*~
+/${project.build.dir}
+/nb-configuration.xml
+/nbactions.xml
+/target
+/nb-configuration.xml
+/src/main/webapp/META-INF/context.xml
+.project
+.settings
+.classpath
+bin
+*.*~
+*.log
+target
+/nbproject/
+db.data
+db.redo
+/nbactions-upload nexumcomms.xml
+/nbactions-run no tests.xml
