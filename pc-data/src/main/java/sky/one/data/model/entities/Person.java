@@ -1,6 +1,9 @@
-package model.entities;
+package sky.one.data.model.entities;
 
-public class Person {
+import javax.persistence.MappedSuperclass;
+
+@MappedSuperclass
+public class Person extends BaseEntity {
 
   private String firstName;
   private String lastName;

@@ -1,4 +1,4 @@
-package model.entities;
+package sky.one.data.model.entities;
 
 import java.time.LocalDate;
 import javax.persistence.Entity;
@@ -6,7 +6,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "pets")
-public class Pet {
+public class Pet extends BaseEntity{
 
   private PetType petType;
   private Owner owner;

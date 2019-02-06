@@ -1,6 +1,6 @@
-package model.entities;
+package sky.one.data.model.entities;
 
-public class PetType {
+public class PetType extends BaseEntity{
 
   private String name;
 
