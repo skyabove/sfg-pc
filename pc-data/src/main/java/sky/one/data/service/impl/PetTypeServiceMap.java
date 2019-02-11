@@ -1,13 +1,13 @@
 package sky.one.data.service.impl;
 
 import java.util.List;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import sky.one.data.model.entities.PetType;
 import sky.one.data.service.api.AbstractMapService;
 import sky.one.data.service.api.PetTypeService;
 import sky.one.data.util.IdGenerator;
 
-@Component
+@Service
 public class PetTypeServiceMap extends AbstractMapService<PetType, Integer> implements
     PetTypeService {
 

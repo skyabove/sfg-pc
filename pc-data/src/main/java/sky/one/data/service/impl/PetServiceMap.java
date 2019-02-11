@@ -4,12 +4,12 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 import sky.one.data.model.entities.Pet;
 import sky.one.data.service.api.AbstractMapService;
-import sky.one.data.service.api.CrudService;
+import sky.one.data.service.api.PetService;
 import sky.one.data.util.IdGenerator;
 
 @Service
 public class PetServiceMap extends AbstractMapService<Pet, Integer> implements
-    CrudService<Pet, Integer> {
+    PetService {
 
   private final IdGenerator generator;
 
