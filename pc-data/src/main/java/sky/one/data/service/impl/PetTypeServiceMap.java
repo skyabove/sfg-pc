@@ -1,29 +1,29 @@
 package sky.one.data.service.impl;
 
 import java.util.List;
-import org.springframework.stereotype.Service;
-import sky.one.data.model.entities.Pet;
+import org.springframework.stereotype.Component;
+import sky.one.data.model.entities.PetType;
 import sky.one.data.service.api.AbstractMapService;
-import sky.one.data.service.api.CrudService;
+import sky.one.data.service.api.PetTypeService;
 import sky.one.data.util.IdGenerator;
 
-@Service
-public class PetServiceMap extends AbstractMapService<Pet, Integer> implements
-    CrudService<Pet, Integer> {
+@Component
+public class PetTypeServiceMap extends AbstractMapService<PetType, Integer> implements
+    PetTypeService {
 
   private final IdGenerator generator;
 
-  public PetServiceMap(IdGenerator generator) {
+  public PetTypeServiceMap(IdGenerator generator) {
     this.generator = generator;
   }
 
   @Override
-  public Pet findById(Integer id) {
+  public PetType findById(Integer id) {
     return super.findById(id);
   }
 
   @Override
-  public Pet save(Pet entity) {
+  public PetType save(PetType entity) {
     if (entity.getId() == null) {
       entity.setId(generator.generateNextIntId(super.map.keySet()));
     }
@@ -31,12 +31,12 @@ public class PetServiceMap extends AbstractMapService<Pet, Integer> implements
   }
 
   @Override
-  public List<Pet> findAll() {
+  public List<PetType> findAll() {
     return super.findAll();
   }
 
   @Override
-  public void delete(Pet entity) {
+  public void delete(PetType entity) {
     super.delete(entity);
   }
 
